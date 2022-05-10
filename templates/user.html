@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main</title>
+</head>
+<body>
+
+<h1>И снова здрасте!</h1>
+<br>
+{% for i in users %}
+<a href="/info/{{i['id']}}">id: {{i['id']}}</a>
+<br>
+<p>name: {{i['name']}} last name: {{i['surname']}}</p>
+{% endfor %}
+
+
+<br>
+<a href="/">Назад</a>
+
+</body>
+</html>
